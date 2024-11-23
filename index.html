@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="villa-prroject\style.css" />
+    <link rel="stylesheet" href="/villa-prroject\style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -19,49 +19,133 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- nav-start -->
-    <div class="text-black font-bold block text-center mt-8 ">
-      <h1 class=" text-3xl block xl:hidden md:hidden ">VILLA</h1>
+    <div class="text-black font-bold block text-center mt-8">
+      <h1 class="text-3xl block xl:hidden md:hidden">VILLA</h1>
     </div>
     <nav class="flex justify-between xl:px-9 md:px-9">
       <div class="text-black font-bold">
-        <h1 class=" mt-5 text-3xl hidden xl:block md:block">VILLA</h1>
+        <h1 class="mt-5 text-3xl hidden xl:block md:block">VILLA</h1>
       </div>
 
-      <div class="flex mt-5 font-medium md:text-lg text-sm w-full justify-center md:justify-end xl:justify-end gap-5   ">
-        
+      <div
+        class="flex mt-5 font-medium md:text-lg text-sm w-full justify-center md:justify-end xl:justify-end gap-5"
+      >
         <a
-          class="hover:text-orange-500 transition-all duration-500 visited:text-orange-500 xl:mt- md:mt-1 nav-link"
-          href="/villa-prroject/index.html" 
+          class="hover:text-orange-500 transition-all duration-500 visited:text-orange-500 xl:mt- md:mt-1 nav-link "
+          href="/villa-prroject/index.html"
           data-path="/villa-prroject\index.html"
-          ><span style="font-size:clamp(10pt,2.5vw, 15pt);">Home</span></a
+          ><span style="font-size: clamp(10pt, 2.5vw, 15pt)">Home</span></a
         >
         <a
-          class="hover:text-orange-500 transition-all duration-500 nav-link " style="font-size:clamp(12pt,2.5vw, 20pt);"
+          class="hover:text-orange-500 transition-all duration-500 nav-link "
+          style="font-size: clamp(12pt, 2.5vw, 20pt)"
           href="/villa-prroject\properrties.html"
           data-path="/villa-prroject\properrties.html"
-          > <span  style="font-size:clamp(10pt,2.5vw, 15pt);">Properrties</span></a
+        >
+          <span style="font-size: clamp(10pt, 2.5vw, 15pt)"
+            >Properrties</span
+          ></a
         >
         <a
-          class="hover:text-orange-500 transition-all duration-500 nav-link "style="font-size:clamp(12pt,2.5vw, 20pt);"
+          class="hover:text-orange-500 transition-all duration-500 nav-link"
+          style="font-size: clamp(12pt, 2.5vw, 20pt)"
           href="villa-prroject\property-details.html"
           data-path="villa-prroject\property-details.html"
-          > <span  style="font-size:clamp(10pt,2.5vw, 15pt);">Property Details</span></a
+        >
+          <span style="font-size: clamp(10pt, 2.5vw, 15pt)"
+            >Property Details</span
+          ></a
         >
         <a
-          class="hover:text-orange-500 transition-all duration-500 nav-link "style="font-size:clamp(12pt,2.5vw, 20pt);"
+          class="hover:text-orange-500 transition-all duration-500 nav-link"
+          style="font-size: clamp(12pt, 2.5vw, 20pt)"
           href="villa-prroject\contact-us.html"
           data-path="villa-prroject\contact-us.html"
-          ><span style="font-size:clamp(10pt,2.5vw, 15pt);">Contact Us</span></a
+          ><span style="font-size: clamp(10pt, 2.5vw, 15pt)"
+            >Contact Us</span
+          ></a
         >
-
-       
       </div>
     </nav>
     <!-- nav-end -->
+
+    <!-- main-sec-start -->
+    <div class="relative w-full mt-10">
+      <!-- Carousel Wrapper -->
+      <div class="overflow-hidden relative rounded-3xl">
+        <div class="flex transition-transform duration-700" id="carousel">
+          <img
+            src="/villa-prroject\Assest\imgs\banner-01.jpg"
+            class="w-full relative brightness-50"
+            alt="Image 1"
+          />
+          <h1
+            class="absolute xl:text-xl lg:mx-80 lg:my-72 font-bold h-9 text text-white from-neutral-300"
+          >
+            New Cairo, <span class="text-orange-500">Egypt</span>
+          </h1>
+
+          <img
+            src="/villa-prroject\Assest\imgs\banner-02.jpg"
+            class="w-full relative"
+            alt="Image 2"
+          />
+          <h1
+          class="absolute xl:text-xl lg:mx-80 lg:my-72 font-bold h-9 text text-white from-neutral-300"
+        >
+          New Cairo, <span class="text-orange-500">Egypt</span>
+        </h1>
+          <img
+            src="/villa-prroject\Assest\imgs\banner-03.jpg"
+            class="w-full relative"
+            alt="Image 3"
+          />
+          
+        </div>
+      </div>
+      <!-- Left and Right Arrows -->
+      <button
+        id="prev"
+        class="absolute top-1/2 left-6 transform -translate-y-1/2 p-2 rounded-full text-white"
+      >
+        <i class="fa-solid fa-angles-left scale-150"></i>
+        <!-- Left arrow -->
+      </button>
+      <button
+        id="next"
+        class="absolute top-1/2 right-6 transform -translate-y-1/2 p-2 rounded-full text-white"
+      >
+        <i class="fa-solid fa-angles-right scale-150"></i>
+        <!-- Right arrow -->
+      </button>
+      <!-- Navigation Dots -->
+      <div class="absolute bottom-4 left-4 flex space-x-2">
+        <button
+          class="w-3 h-3 rounded-full bg-orange-500"
+          data-slide="0"
+        ></button>
+        <button
+          class="w-3 h-3 rounded-full bg-gray-300"
+          data-slide="1"
+        ></button>
+        <button
+          class="w-3 h-3 rounded-full bg-gray-300"
+          data-slide="2"
+        ></button>
+      </div>
+    </div>
+    <!-- main-sec-end -->
+
+
     
-    <script src="villa-prroject\main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="/villa-prroject\main.js"></script>
   </body>
 </html>
