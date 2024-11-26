@@ -31,7 +31,7 @@ nextButton.addEventListener('click', () => {
 });
 
 // Optional: Auto-slide functionality
-// setInterval(() => {
-//   currentIndex = (currentIndex + 1) % buttons.length;
-//   updateCarousel(currentIndex);
-// }, 3000);
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % buttons.length;
+  updateCarousel(currentIndex);
+}, 3000);

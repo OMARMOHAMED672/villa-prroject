@@ -38,13 +38,13 @@
         class="flex mt-5 font-medium md:text-lg text-sm w-full justify-center md:justify-end xl:justify-end gap-5"
       >
         <a
-          class="hover:text-orange-500 transition-all duration-500 visited:text-orange-500 xl:mt- md:mt-1 nav-link "
+          class="hover:text-orange-500 transition-all duration-500 visited:text-orange-500 xl:mt- md:mt-1 nav-link"
           href="/villa-prroject/index.html"
           data-path="/villa-prroject\index.html"
           ><span style="font-size: clamp(10pt, 2.5vw, 15pt)">Home</span></a
         >
         <a
-          class="hover:text-orange-500 transition-all duration-500 nav-link "
+          class="hover:text-orange-500 transition-all duration-500 nav-link"
           style="font-size: clamp(12pt, 2.5vw, 20pt)"
           href="/villa-prroject\properrties.html"
           data-path="/villa-prroject\properrties.html"
@@ -79,7 +79,7 @@
     <!-- main-sec-start -->
     <div class="relative w-full mt-10">
       <!-- Carousel Wrapper -->
-      <div class="overflow-hidden relative rounded-3xl">
+      <div class="overflow-hidden relative rounded">
         <div class="flex transition-transform duration-700" id="carousel">
           <img
             src="/villa-prroject\Assest\imgs\banner-01.jpg"
@@ -98,35 +98,36 @@
             alt="Image 2"
           />
           <h1
-          class="absolute xl:text-xl lg:mx-80 lg:my-72 font-bold h-9 text text-white from-neutral-300"
-        >
-          New Cairo, <span class="text-orange-500">Egypt</span>
-        </h1>
+            class="absolute xl:text-xl lg:mx-80 lg:my-72 font-bold h-9 text text-white from-neutral-300"
+          >
+            New Cairo, <span class="text-orange-500">Egypt</span>
+          </h1>
           <img
             src="/villa-prroject\Assest\imgs\banner-03.jpg"
             class="w-full relative"
             alt="Image 3"
           />
-          
         </div>
       </div>
       <!-- Left and Right Arrows -->
       <button
         id="prev"
-        class="absolute top-1/2 left-6 transform -translate-y-1/2 p-2 rounded-full text-white"
+        class="absolute top-1/2 left-6 transform -translate-y-1/2 p-2 rounded-full text-white hidden xl:block md:block"
       >
         <i class="fa-solid fa-angles-left scale-150"></i>
         <!-- Left arrow -->
       </button>
       <button
         id="next"
-        class="absolute top-1/2 right-6 transform -translate-y-1/2 p-2 rounded-full text-white"
+        class="absolute top-1/2 right-6 transform -translate-y-1/2 p-2 rounded-full text-white hidden xl:block md:block"
       >
         <i class="fa-solid fa-angles-right scale-150"></i>
         <!-- Right arrow -->
       </button>
       <!-- Navigation Dots -->
-      <div class="absolute bottom-4 left-4 flex space-x-2">
+      <div
+        class="absolute bottom-4 left-4 flex space-x-2 hidden xl:block md:block"
+      >
         <button
           class="w-3 h-3 rounded-full bg-orange-500"
           data-slide="0"
@@ -142,9 +143,9 @@
       </div>
     </div>
     <!-- main-sec-end -->
+    <!-- cards start -->
+    <div></div>
 
-
-    
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="/villa-prroject\main.js"></script>
   </body>
